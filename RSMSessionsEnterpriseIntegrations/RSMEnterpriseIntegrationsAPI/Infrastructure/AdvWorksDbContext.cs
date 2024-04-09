@@ -20,6 +20,8 @@
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Product> Products { get; set; }
 
+        public virtual DbSet<ProductCategory> ProductCategories { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
